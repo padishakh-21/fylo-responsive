@@ -1,0 +1,143 @@
+.footer {
+  background-color: rgb(11, 21, 36);
+}
+
+.footer__inner {
+  padding-top: 200px;
+  padding-bottom: 100px;
+  padding-left: 100px;
+  padding-right: 80px;
+}
+
+.footer__content {
+  margin-top: 32px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__info {
+  width: 28%;
+  margin: 0;
+  font-size: 16px;
+  line-height: 24px;
+  color: rgb(255, 255, 255);
+}
+
+.footer__info::before {
+  display: inline-block;
+  width: 13px;
+  height: 18px;
+  margin-right: 27px;
+  background-image: url("../../img/place.svg");
+  background-repeat: no-repeat;
+  background-size: 13px 18px;
+  background-position: left top;
+  content: " ";
+}
+
+.footer__contact-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.footer__contact-item {
+  margin-bottom: 19px;
+}
+
+.footer__contact-link {
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 21px;
+  text-align: center;
+  color: rgb(255, 255, 255);
+}
+
+.footer__contact-img {
+  width: auto;
+  height: 100%;
+  margin-right: 22px;
+}
+
+.footer__socials-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+}
+
+.footer__socials-item {
+  margin-right: 11px;
+}
+
+.footer__socials-link {
+  display: inline-block;
+  text-decoration: none;
+}
+
+.footer__socials-img {
+  display: block;
+  width: 33px;
+  height: 31px;
+}
+
+@include breakpoint-down(1000px) {
+  .footer__inner {
+    padding-left: 60px;
+    padding-right: 40px;
+  }
+
+  .footer__socials-list {
+    flex-direction: column;
+  }
+}
+
+@include breakpoint-down(800px) {
+
+  .footer__inner {
+    padding-left: 40px;
+    padding-right: 30px;
+  }
+
+  .footer__content{
+    flex-wrap: wrap;
+  }
+
+  .footer__info {
+    width: 48%;
+    margin-bottom: 50px;
+  }
+
+  .footer__contact-list {
+    width: 45%;
+  }
+}
+
+@include breakpoint-down(550px) {
+  .footer__inner {
+    padding-bottom: 50px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .footer__content{
+    flex-direction: column;
+  }
+
+  .footer__info {
+    width: 90%;
+    margin-bottom: 20px;
+  }
+
+  .footer__contact-list {
+    width: 90%;
+    margin-bottom: 70px;
+  }
+
+  .footer__socials-list {
+    margin-top: 80px;
+    flex-direction: row;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

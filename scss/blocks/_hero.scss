@@ -1,0 +1,109 @@
+.hero {
+    background-color: #1B2330;
+    background-image: url("../../img/background.png");
+    background-repeat: no-repeat;
+    background-size: auto auto;
+    background-position: left calc(50% - 1px) top 628px;
+}
+
+.hero__inner {
+    padding-bottom: 100px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.hero__img {
+    width: 720px;
+    height: 100%;
+}
+
+.hero_heading {
+    margin: 0;
+    margin-top: 36px;
+    margin-bottom: 32px;
+    margin-left: 20%;
+    margin-right: 20%;
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 60px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+.hero__text {
+    margin: 0;
+    margin-bottom: 32px;
+    margin-left: 25%;
+    margin-right: 25%;
+    font-size: 20px;
+    line-height: 30px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+.hero__btn {
+    padding: 19px 95px;
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    color: rgb(255, 255, 255);
+    background-image: linear-gradient(152.13deg, rgb(99, 225, 217) -150.21%, rgb(52, 160, 205) 170.03%);
+    box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.15925);
+    border: 2px solid transparent;
+    border-radius: 28px;
+    cursor: pointer;
+}
+
+.hero__btn:hover {
+    background-image: none;
+    background-color: transparent;
+    border: 2px solid rgb(255, 255, 255);
+}
+
+@include breakpoint-down(650px) {
+    .hero {
+        background-position: left calc(50% - 1px) top 430px;
+    }
+    .hero_heading {
+        margin-left: 15%;
+        margin-right: 15%;
+        font-size: 28px;
+        line-height: 40px;
+    }
+    .hero__text {
+        margin-left: 15%;
+        margin-right: 15%;
+        font-size: 18px;
+    }
+    .hero__btn {
+        padding: 19px 75px;
+        font-size: 14px;
+        line-height: 15px;
+    }
+}
+
+@include breakpoint-down(450px) {
+    .hero {
+        background-position: left calc(50% - 1px) top 330px;
+    }
+    .hero_heading {
+        margin-left: 10%;
+        margin-right: 10%;
+        font-size: 24px;
+        line-height: 35px;
+    }
+    .hero__text {
+        margin-left: 10%;
+        margin-right: 10%;
+        font-size: 14px;
+        line-height: 21px;
+    }
+    .hero__btn {
+        padding: 15px 65px;
+        font-size: 14px;
+        line-height: 16px;
+    }
+}

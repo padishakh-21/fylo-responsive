@@ -1,0 +1,139 @@
+.get {
+    background-color: rgb(24, 31, 43);
+}
+
+.get__inner {
+    width: 65%;
+    position: relative;
+    top: 110px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 42px 70px;
+    background-color: rgb(27, 35, 48);
+    box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.254274);
+    border-radius: 9px;
+    text-align: center;
+}
+
+.get__heading {
+    margin: 0;
+    margin-bottom: 16px;
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 48px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+.get__text {
+    margin: 0;
+    margin-bottom: 38px;
+    font-size: 14px;
+    line-height: 21px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+.get__form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.get__input {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-left: 38px;
+    padding-right: 150px;
+    font-size: 12px;
+    line-height: 14px;
+    color: rgb(192, 192, 192);
+    background-color: rgb(255, 255, 255);
+    box-shadow: 2px 3px 6px rgba(7, 4, 59, 0.157043);
+    border: none;
+    border-radius: 24px;
+    outline: none;
+}
+
+.get__btn {
+    margin-left: 29px;
+    padding: 15px 27px;
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    background-image: linear-gradient(152.13deg, rgb(99, 225, 217) -150.21%, rgb(52, 160, 205) 170.03%);
+    box-shadow: 2px 3px 6px rgba(7, 4, 59, 0.157043);
+    border: none;
+    border-radius: 24px;
+    cursor: pointer;
+}
+
+@include breakpoint-down (1100px) {
+    .get__inner {
+        width: 70%;
+        top: 165px;
+        padding: 42px 55px;
+    }
+    .get__form {
+        flex-direction: column;
+    }
+    .get__input {
+        margin-bottom: 24px;
+        padding: 16px 38px;
+    }
+    .get__btn {
+        margin-left: 0;
+        padding: 15px 38px;
+    }
+}
+
+@include breakpoint-down (650px) {
+    .get__inner {
+        width: 90%;
+        padding: 35px 30px;
+    }
+    .get__heading {
+        font-size: 24px;
+        line-height: 36px;
+    }
+    .get__text {
+        font-size: 12px;
+        line-height: 18px;
+    }
+    .get__input {
+        padding: 15px 28px;
+    }
+    .get__btn {
+        padding: 15px 25px;
+        font-size: 12px;
+        line-height: 14px;
+    }
+}
+
+@include breakpoint-down (400px) {
+    .get__inner {
+        padding: 35px 25px;
+    }
+    .get__heading {
+        font-size: 18px;
+        line-height: 24px;
+    }
+    .get__text {
+        font-size: 14px;
+        line-height: 21px
+    }
+    .get__input {
+        padding: 12px 25px;
+        font-size: 10px;
+        line-height: 12px;
+    }
+    .get__btn {
+        padding: 12px 25px;
+        font-size: 12px;
+        line-height: 12px;
+    }
+}
